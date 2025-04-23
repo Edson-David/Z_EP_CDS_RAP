@@ -1,0 +1,22 @@
+unmanaged implementation in class zcl_i_ep_sales unique;
+strict ( 2 );
+
+define behavior for ZI_EP_SALES alias Sales
+
+lock master
+authorization master ( instance )
+
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Orderid;
+
+  mapping for ztep_sales_un control zsep_sales_un
+    {
+      Orderid  = orderid;
+      Customer = customer;
+      Company  = company;
+      Vendor   = vendor;
+    }
+}

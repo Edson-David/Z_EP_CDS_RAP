@@ -1,0 +1,10 @@
+//abstract; //
+projection;
+strict ( 2 );
+
+define behavior for ZC_EP_SALES alias Sales
+{
+  use create;
+  use update;
+  use delete;
+}

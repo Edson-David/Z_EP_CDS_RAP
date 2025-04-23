@@ -1,0 +1,5 @@
+@EndUserText.label: 'Serviços teste'
+define service ZSD_EP_VIEW_ENTITY_AGENCY {
+  expose ZI_EP_VIEW_ENTITY_AGENCY;
+  expose ZCE_EP_AGENCY            as Agencia;
+}
